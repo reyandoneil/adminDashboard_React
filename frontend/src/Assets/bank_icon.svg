@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="206" height="204" viewBox="0 0 206 204">
+  <g id="Group_82" data-name="Group 82" transform="translate(-916 -223)">
+    <rect id="Rectangle_157" data-name="Rectangle 157" width="206" height="204" rx="8" transform="translate(916 223)" fill="none"/>
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(960 247)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M59.5,0,119,38H0Z" stroke="none"/>
+      <path d="M 59.5 3.814697265625e-06 L 0 38 L 119 38 L 59.5 3.814697265625e-06 M 59.5 -9.999996185302734 C 61.37070083618164 -9.999996185302734 63.24140167236328 -9.475948333740234 64.88249969482422 -8.427848815917969 L 124.3824996948242 29.57215118408203 C 128.1269989013672 31.96360206604004 129.8446044921875 36.53887557983398 128.5989227294922 40.80370330810547 C 127.3532257080078 45.06852722167969 123.4430236816406 48 119 48 L 0 48 C -4.443023681640625 48 -8.353225708007812 45.06852722167969 -9.598922729492188 40.80370330810547 C -10.8446044921875 36.53887557983398 -9.126998901367188 31.96360206604004 -5.382499694824219 29.57215118408203 L 54.11750030517578 -8.427848815917969 C 55.75859832763672 -9.475948333740234 57.62929916381836 -9.999996185302734 59.5 -9.999996185302734 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Rectangle_158" data-name="Rectangle 158" transform="translate(960 368)" fill="#fff" stroke="#707070" stroke-linejoin="round" stroke-width="10">
+      <rect width="119" height="21" stroke="none"/>
+      <rect x="-5" y="-5" width="129" height="31" fill="none"/>
+    </g>
+    <g id="Rectangle_159" data-name="Rectangle 159" transform="translate(957 304)" fill="#fff" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+      <rect width="34" height="49" stroke="none"/>
+      <rect x="5" y="5" width="24" height="39" fill="none"/>
+    </g>
+    <g id="Rectangle_160" data-name="Rectangle 160" transform="translate(1048 304)" fill="#fff" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+      <rect width="34" height="49" stroke="none"/>
+      <rect x="5" y="5" width="24" height="39" fill="none"/>
+    </g>
+    <g id="Rectangle_161" data-name="Rectangle 161" transform="translate(1003 304)" fill="#fff" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+      <rect width="34" height="49" stroke="none"/>
+      <rect x="5" y="5" width="24" height="39" fill="none"/>
+    </g>
+  </g>
+</svg>
