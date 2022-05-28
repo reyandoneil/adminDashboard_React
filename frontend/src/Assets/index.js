@@ -9,6 +9,7 @@ import profile_icon from './profile_icon.svg';
 import help_icon from './help_icon.svg';
 import notification_icon from './notification_icon.svg'
 import airlines_icon from './airlines_icon.svg'
+import close_icon from './close_icon.svg'
 
 export {
   LogoSrc,
@@ -21,5 +22,6 @@ export {
   profile_icon,
   help_icon,
   notification_icon,
-  airlines_icon
+  airlines_icon,
+  close_icon
 };

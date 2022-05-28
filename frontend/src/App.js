@@ -1,11 +1,12 @@
 import { GlobalSyle } from './GlobalStyle';
-import { Dashboard } from './Pages';
+import { Router } from './Config';
 
 function App() {
+ 
   return (
     <>
       <GlobalSyle />
-      <Dashboard />
+      <Router />
     </>
   );
 }

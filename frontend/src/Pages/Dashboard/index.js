@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import { useBreakpoints } from '../../Helper';
 import {
   DashboardContainer,
@@ -8,17 +9,28 @@ import {
   ContentWrapper,
 } from './ElementsDashboard';
 import { Sidebar } from '../../Components/Organisms';
+import { useSelector } from 'react-redux'
+import { Modal } from '../../Components/Organisms'
 
 function Dashboard() {
   const breakpoints = useBreakpoints();
+  const userReducer = useSelector(state => state.user)
+  const isIdle = userReducer.isIdle
   return (
     <DashboardContainer>
-      <HeaderWrapper>HeaderWrapper</HeaderWrapper>
+      {isIdle && (<Modal />)}
+      <HeaderWrapper>
+        HeaderWrapper
+      </HeaderWrapper>
       <SidebarWrapper>
         <Sidebar />
       </SidebarWrapper>
-      <TopMenuContentWrapper>topmenu</TopMenuContentWrapper>
-      <ContentWrapper>ContentWrapper {breakpoints}</ContentWrapper>
+      <TopMenuContentWrapper>
+        topmenu {breakpoints}
+      </TopMenuContentWrapper>
+      <ContentWrapper>
+        <Outlet />
+      </ContentWrapper>
     </DashboardContainer>
   );
 }

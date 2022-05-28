@@ -3,7 +3,6 @@ import {
   transaction_icon,
   invoice_icon,
   userClient_icon,
-  bank_icon,
   hotel_icon,
   profile_icon,
   help_icon,
