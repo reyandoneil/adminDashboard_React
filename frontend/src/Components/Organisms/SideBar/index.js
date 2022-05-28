@@ -1,11 +1,15 @@
 import React from 'react';
 import { LogoSrc } from '../../../Assets/index';
-import { LogoSidebar, MenuLinkIconSidebar } from '../../Molecules';
 import {
-  MenuSidbar,
+  LogoSidebar,
+  MenuLinkIconSidebar,
+} from '../../Molecules';
+import {
+  MenuSidebar,
   Master,
   Setting,
 } from '../../../Master/MenuSidebar';
+
 import { Title, SidebarWrapper } from './ElementsSidebar';
 
 function Sidebar() {
@@ -14,32 +18,36 @@ function Sidebar() {
       <SidebarWrapper>
         <LogoSidebar src={LogoSrc} />
         <Title>Menu</Title>
-        {MenuSidbar.map((link) => {
+        {MenuSidebar.map((item) => {
           return (
             <MenuLinkIconSidebar
-              key={link.id}
-              src={link.icon}
-              name={link.name}
+              key={item.id}
+              src={item.icon}
+              name={item.name}
+              path={item.path}
             />
           );
         })}
         <Title>Master</Title>
-        {Master.map((link) => {
+        {Master.map((item) => {
           return (
             <MenuLinkIconSidebar
-              key={link.id}
-              src={link.icon}
-              name={link.name}
+              key={item.id}
+              src={item.icon}
+              name={item.name}
+              path={item.path}
+
             />
           );
         })}
         <Title>Setting</Title>
-        {Setting.map((link) => {
+        {Setting.map((item) => {
           return (
             <MenuLinkIconSidebar
-              key={link.id}
-              src={link.icon}
-              name={link.name}
+              key={item.id}
+              src={item.icon}
+              name={item.name}
+              path={item.path}
             />
           );
         })}

@@ -1,10 +1,10 @@
 import React from 'react';
 import { LinkWrapper, Text } from './ElementsLink';
 
-function Links({ name }) {
+function Links({ name, ss }) {
   return (
     <>
-      <LinkWrapper>
+      <LinkWrapper ss={ss}>
         <Text>{name}</Text>
       </LinkWrapper>
     </>

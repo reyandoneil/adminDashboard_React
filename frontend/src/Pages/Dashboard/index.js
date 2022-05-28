@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { useBreakpoints } from '../../Helper';
+import { useSelector } from 'react-redux';
 import {
   DashboardContainer,
   SidebarWrapper,
@@ -9,25 +9,22 @@ import {
   ContentWrapper,
 } from './ElementsDashboard';
 import { Sidebar } from '../../Components/Organisms';
-import { useSelector } from 'react-redux'
-import { Modal } from '../../Components/Organisms'
+import { Modal } from '../../Components/Organisms';
 
 function Dashboard() {
-  const breakpoints = useBreakpoints();
-  const userReducer = useSelector(state => state.user)
-  const isIdle = userReducer.isIdle
+  const screenSizeReducer = useSelector((state) => state.screenSize);
+  const ss = screenSizeReducer.ss;
+
+  const userReducer = useSelector((state) => state.user);
+  const isIdle = userReducer.isIdle;
   return (
-    <DashboardContainer>
-      {isIdle && (<Modal />)}
-      <HeaderWrapper>
-        HeaderWrapper
-      </HeaderWrapper>
+    <DashboardContainer ss={ss}>
+      {isIdle && <Modal />}
+      <HeaderWrapper>HeaderWrapper</HeaderWrapper>
       <SidebarWrapper>
         <Sidebar />
       </SidebarWrapper>
-      <TopMenuContentWrapper>
-        topmenu {breakpoints}
-      </TopMenuContentWrapper>
+      <TopMenuContentWrapper>topmenu {ss}</TopMenuContentWrapper>
       <ContentWrapper>
         <Outlet />
       </ContentWrapper>

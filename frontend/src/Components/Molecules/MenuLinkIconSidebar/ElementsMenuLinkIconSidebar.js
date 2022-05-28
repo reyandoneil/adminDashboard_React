@@ -1,16 +1,19 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
-export const MenuLinkSidebarWrapper = styled.span`
+export const MenuLinkSidebarWrapper = styled(NavLink)`
+  color: black;
   display: flex;
   width: 100%;
   height: 35px;
   align-items: center;
-  /* justify-content: center; */
+  text-decoration: none;
   cursor: pointer;
   &:hover {
-    background-color: #BBCBD2;
+    color: #bbcbd2;
   }
   &.active {
-    background-color: #BBCBD2;
+    color: white;
+    background-color: #bbcbd2;
   }
 `;

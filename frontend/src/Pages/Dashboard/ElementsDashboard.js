@@ -3,7 +3,17 @@ import styled from 'styled-components';
 export const DashboardContainer = styled.div`
   display: grid;
   height: 100vh;
-  grid-template-columns: 200px 1fr 1fr 1fr;
+  ${(props) => {
+    if (props.ss === 'xs' || props.ss === 'sm') {
+      return `
+        grid-template-columns: 80px 1fr 1fr 1fr;
+      `;
+    } else {
+      return `
+        grid-template-columns: 200px 1fr 1fr 1fr;
+      `;
+    }
+  }}
   grid-template-rows: 50px 70px 1fr;
   grid-template-areas:
     'sidebar header header header'
@@ -28,7 +38,6 @@ export const HeaderWrapper = styled.div`
 
 export const TopMenuContentWrapper = styled.div`
   grid-area: topmenu;
- 
 `;
 
 export const ContentWrapper = styled.div`

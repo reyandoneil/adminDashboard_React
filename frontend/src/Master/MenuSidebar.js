@@ -7,10 +7,10 @@ import {
   profile_icon,
   help_icon,
   notification_icon,
-  airlines_icon
+  airlines_icon,
 } from '../Assets';
 
-const MenuSidbar = [
+const MenuSidebar = [
   {
     id: 1,
     name: 'Dashboard',
@@ -32,20 +32,20 @@ const MenuSidbar = [
   {
     id: 4,
     name: 'User',
-    path: '/dashboard/home',
+    path: '/dashboard/user',
     icon: userClient_icon,
   },
 ];
 
 const Master = [
   {
-    id: 1,
+    id: 5,
     name: ' Master Hotel',
     path: '/dashboard/masterHotel',
     icon: hotel_icon,
   },
   {
-    id: 2,
+    id: 6,
     name: 'Master Airlines',
     path: '/dashboard/masterAirlines',
     icon: airlines_icon,
@@ -54,23 +54,23 @@ const Master = [
 
 const Setting = [
   {
-    id: 1,
+    id: 7,
     name: 'Notification',
     path: '/dashboard/notification',
     icon: notification_icon,
   },
   {
-    id: 2,
+    id: 8,
     name: 'Profile',
-    path: '/dahboard/profile',
+    path: '/dashboard/profile',
     icon: profile_icon,
   },
   {
-    id: 3,
+    id: 9,
     name: 'Help',
     path: '/dashboard/help',
     icon: help_icon,
   },
 ];
 
-export { MenuSidbar, Master, Setting };
+export  { MenuSidebar, Master, Setting };
